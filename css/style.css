@@ -7,8 +7,13 @@
 }
 body {
     background-color: dimgray;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+
 }
 header {
+    width: 80vw;
     background-color: dimgray;
     font-family: 'Roboto', 'swap';
     display: flex;
@@ -23,6 +28,11 @@ header {
     border-radius: 15px;
 }
 
+.tcontainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
 
 .peliculasmasvaloradas {
     background-color:black;
@@ -69,3 +79,15 @@ header {
   
   
 }
+
+.telon-banner {
+    height:200px;
+    width:100%
+}
+
+.titulo-banner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
