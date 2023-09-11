@@ -236,3 +236,37 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/* detalle serie */
+
+.serie-elegida{
+    background-color:rgb(38, 38, 39);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px; 
+    width: 60%;
+}
+
+.serie-elegida > li {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.detalle-Mounstrous{
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    
+
+}
