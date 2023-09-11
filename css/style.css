@@ -137,3 +137,7 @@ header {
 .footer{
     color: whitesmoke;
 }
+.headerinfo:hover {
+    color: black;
+  
+}
