@@ -187,8 +187,10 @@ header {
         margin-bottom: 100px;
     }
 
+
+
   
-    /* agregar favoriitos */
+    /* favoriitos */
 
 .mcontainer{
     width: 70vw;
@@ -205,7 +207,7 @@ header {
     width:100%
 }
 .banner_favoritos {
-    background-color:black;
+    background-color:rgb(38, 38, 39);
     display: flex;
     flex-wrap: nowrap;
     padding: 10px;
@@ -214,4 +216,23 @@ header {
     border-style: solid;
     border-radius: 15px;
     margin-bottom: 100px;
+}
+.pelicula-card {
+    height: 25rem;
+    margin: 1rem;
+    border: 4px solid transparent;
+}
+
+.pelicula-card:hover {
+    margin: 1rem;
+    border: 4px solid white
+}
+
+.banner_favoritos > ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
