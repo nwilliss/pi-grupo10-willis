@@ -186,3 +186,32 @@ header {
         border-radius: 15px;
         margin-bottom: 100px;
     }
+
+  
+    /* agregar favoriitos */
+
+.mcontainer{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.favorito-banner-container{
+    display: flex;
+    flex-direction: column;
+}
+.favorito-banner{
+    height:200px;
+    width:100%
+}
+.banner_favoritos {
+    background-color:black;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
