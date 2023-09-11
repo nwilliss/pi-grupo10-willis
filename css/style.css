@@ -303,3 +303,50 @@ header {
     
 
 }
+
+/* Estilos para el contenedor padre */
+
+.generos-peliculas {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 21px;
+}
+
+.generos-series {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 21px;
+}
+
+
+
+.titulo-genero {
+    color: white;
+}
+
+.clase-titulosgen{
+    color: whitesmoke;
+    align-items: center;
+}
+.genero-elegido {
+    color:whitesmoke;
+    text-align: center;
+    font-family: "";
+}
+.banner_genero > ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;}
