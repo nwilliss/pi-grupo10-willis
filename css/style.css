@@ -355,13 +355,16 @@ header {
     background-color:rgb(38, 38, 39);
     border-style: solid;
     border-color: white;
-     border-radius: 15px;
+     border-radius: 25px;
      margin-bottom: 100px;
     list-style: none;
     display: flex;
-    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     align-items: center;
     font-size: 21px;
@@ -369,7 +372,7 @@ header {
 .generos-peliculas li a {
     color: white;
     text-decoration: none;
-    background-color:grey;
+    
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
@@ -382,14 +385,17 @@ header {
 .generos-series {
     background-color:rgb(38, 38, 39);
     border-style: solid;
-    border-radius: 15px;
     border-color: white;
-    margin-bottom: 100px;
+     border-radius: 25px;
+     margin-bottom: 100px;
     list-style: none;
     display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     align-items: center;
     font-size: 21px;
@@ -398,7 +404,6 @@ header {
 .generos-series li a {
     color: white;
     text-decoration: none;
-    background-color:grey;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
@@ -500,3 +505,22 @@ form {
     display: flex;
     flex-direction: column;
 }
+.busqueda-banner-container{
+    display: flex;
+    flex-direction: column;
+}
+.busqueda-banner{
+    height:200px;
+    width:100%
+}
+.pelicula-card {
+    height: 25rem;
+    margin: 1rem;
+    border: 4px solid transparent;
+}
+ .banner_busqueda ul li h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    
+}
+
