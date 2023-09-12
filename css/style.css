@@ -172,6 +172,7 @@ header {
 .headerinfo{
     color: white;
     text-decoration: none;
+    
 }
 /* detalle generos */
 
@@ -443,3 +444,16 @@ header {
     padding: 20px
     
 }
+
+
+form {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+  }
+  form{
+    display: flex;
+    justify-content: flex-end;
+  }
