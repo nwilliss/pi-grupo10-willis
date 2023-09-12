@@ -531,3 +531,12 @@ form {
     font-size: medium;
 
 }
+
+.resultado-busqueda{
+    
+    font-size: x-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    color: white;
+   
+    
+}
