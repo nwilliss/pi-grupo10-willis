@@ -474,3 +474,29 @@ form {
      border-top-left-radius: 12px; 
      border-bottom-left-radius: 12px;
   }
+  /* busqueda html */
+.banner_busqueda{
+    background-color:rgb(38, 38, 39);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
+
+}
+.banner_busqueda > ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Bcontainer{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
