@@ -172,7 +172,7 @@ header {
 .headerinfo{
     color: white;
     text-decoration: none;
-    
+
 }
 /* detalle generos */
 
@@ -360,7 +360,7 @@ header {
     list-style: none;
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -432,8 +432,20 @@ header {
 
 .banner_genero{
     width: 100%;
+    height: fit-content;
+    padding: 0%;
+}
+.banner--genero{
+    width: 100%;
     height: 250px;
     padding: 0%;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 70px;
+    margin-top: 40px;
+
+    
 }
 .texto-banner{
     position: absolute;
@@ -456,4 +468,9 @@ form {
   form{
     display: flex;
     justify-content: flex-end;
+  }
+
+  #logoPI{
+     border-top-left-radius: 12px; 
+     border-bottom-left-radius: 12px;
   }
