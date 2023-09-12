@@ -55,6 +55,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1px;
 
 
 }
@@ -85,6 +86,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 2px;
 }
 
 
@@ -99,6 +101,7 @@ header {
     border-style: solid;
     border-radius: 15px;
     margin-bottom: 100px;
+    padding: 2px;
 
 }
 .seriespopulares ul li h3{
@@ -168,6 +171,7 @@ header {
 }
 .headerinfo{
     color: white;
+    text-decoration: none;
 }
 /* detalle generos */
 
@@ -347,6 +351,11 @@ header {
 /* Estilos para el contenedor padre */
 
 .generos-peliculas {
+    background-color:rgb(38, 38, 39);
+    border-style: solid;
+    border-color: white;
+     border-radius: 15px;
+     margin-bottom: 100px;
     list-style: none;
     display: flex;
     width: 100%;
@@ -355,9 +364,26 @@ header {
     flex-wrap: wrap;
     align-items: center;
     font-size: 21px;
+}
+.generos-peliculas li a {
+    color: white;
+    text-decoration: none;
+    background-color:grey;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .generos-series {
+    background-color:rgb(38, 38, 39);
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+    margin-bottom: 100px;
     list-style: none;
     display: flex;
     width: 100%;
@@ -368,7 +394,18 @@ header {
     font-size: 21px;
 }
 
-
+.generos-series li a {
+    color: white;
+    text-decoration: none;
+    background-color:grey;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    width: 100%;
+}
 
 .titulo-genero {
     color: white;
