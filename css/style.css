@@ -316,6 +316,12 @@ header {
     
 
 }
+
+.cienciaficcion{
+    text-decoration: none;
+    color: white;
+}
+
 /* detalle pelicula */
 
 .pelicula-elegida{
