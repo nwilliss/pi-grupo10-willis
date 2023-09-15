@@ -507,7 +507,6 @@ form {
     display: flex;
     flex-wrap: nowrap;
     padding: 10px;
-    overflow: scroll;
     color: white;
     border-style: solid;
     border-radius: 15px;
@@ -562,3 +561,50 @@ form {
    
     
 }
+/* para iphone  */
+
+@media (max-width:420px){
+  
+    #logoPI {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        padding-left: 90px;
+        padding-top: 10px;
+    }
+    
+    .body {
+        background-image: url(../img/WhatsApp\ Image\ 2023-09-10\ at\ 19.50.57.jpeg);
+        display: flex;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
