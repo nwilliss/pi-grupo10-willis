@@ -629,6 +629,7 @@ form {
            padding-right: 45px;
            font-size: large;
            }
+
        
            .tcontainer {
                width: 100%;
@@ -637,6 +638,7 @@ form {
                flex-direction: column;
            }
 
+
            .telon-banner {
             height: 150px;
             width: auto;
@@ -644,11 +646,53 @@ form {
             border-style: solid;
             border-radius: 15px;
         }
+
         .priurl, .segurl {
             color: white;
             font-size: medium;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        .priurl, .segurl {
+            color: white;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .peliculasmasvaloradas > ul {
+            list-style: none;
+            display: flex;
+            margin-left: 40px;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+             padding-right:10px;
+             padding-left:10px;
+             width: 275px;
+       
+        }
+
+        .pelicula-card{
+            height: 300px;
+            border-style: solid;
+            border-color: darkred;
+        }
+            
+        .peliculaspopulares > ul{
+        
+                list-style: none;
+                display: flex;
+                margin-left: 40px;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                 padding-right:10px;
+                 padding-left:10px;
+                 width: 275px;
+        
+        }
+        
 
 
 
