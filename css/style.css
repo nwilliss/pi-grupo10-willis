@@ -601,7 +601,23 @@ form {
             width: 20px;
             height: 70px;
         }
-
+        .headerinfo1{
+            padding-left: 40px;
+            padding-right: 40px;
+            
+    
+        }
+        .headerinfo{
+            align-items: center;
+            text-align: center;
+        }
+        .formulario{
+            display: flex;
+            margin: auto;
+            width: auto;
+            height: 20px;
+            padding-top: 10px;
+        }
 
 
 
