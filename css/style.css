@@ -579,7 +579,28 @@ form {
         flex-direction: column;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-
+        .header{
+            width: auto;
+            margin: 15px;
+            color: white;
+            background-color: rgb(38, 38, 39);
+            justify-content: space-between;
+            align-items: center;
+            display: block;
+            flex-wrap: wrap;
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;
+            border-radius: 15px;
+            font-family: 'Roboto', 'swap';
+        }
+    
+        .logo-sec {
+            display: flex;
+            justify-content: left;
+            width: 20px;
+            height: 70px;
+        }
 
 
 
