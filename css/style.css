@@ -579,39 +579,39 @@ form {
         flex-direction: column;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-        .header{
-            width: auto;
-            margin: 15px;
-            color: white;
-            background-color: rgb(38, 38, 39);
-            justify-content: space-between;
-            align-items: center;
-            display: block;
-            flex-wrap: wrap;
-            border-style: solid;
-            border-width: 1px;
-            border-color: white;
-            border-radius: 15px;
-            font-family: 'Roboto', 'swap';
+     .header{
+         width: auto;
+        margin: 15px;
+         color: white;
+         background-color: rgb(38, 38, 39);
+        justify-content: space-between;
+        align-items: center;
+        display: block;
+        flex-wrap: wrap;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-radius: 15px;
+        font-family: 'Roboto', 'swap';
         }
     
-        .logo-sec {
-            display: flex;
-            justify-content: left;
-            width: 20px;
-            height: 70px;
+    .logo-sec {
+         display: flex;
+        justify-content: left;
+        width: 20px;
+        height: 70px;
         }
-        .headerinfo1{
+     .headerinfo1{
             padding-left: 40px;
             padding-right: 40px;
             
     
         }
-        .headerinfo{
+    .headerinfo{
             align-items: center;
             text-align: center;
         }
-        .formulario{
+    .formulario{
             display: flex;
             margin: auto;
             width: auto;
@@ -619,19 +619,19 @@ form {
             padding-top: 10px;
         }
 
-        .buscador{
+    .buscador{
             padding-left: 45px;
             padding-right: 45px;
            margin-bottom: 20px;}
    
-        .h1{
+    .h1{
            padding-left: 45px;
            padding-right: 45px;
            font-size: large;
            }
 
        
-           .tcontainer {
+    .tcontainer {
                width: 100%;
                height: auto;
                display: flex;
@@ -639,7 +639,7 @@ form {
            }
 
 
-           .telon-banner {
+    .telon-banner {
             height: 150px;
             width: auto;
             color: white;
@@ -647,20 +647,20 @@ form {
             border-radius: 15px;
         }
 
-        .priurl, .segurl {
+    .priurl, .segurl {
             color: white;
             font-size: medium;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .priurl, .segurl {
+    .priurl, .segurl {
             color: white;
             font-size: medium;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
 
-        .peliculasmasvaloradas > ul {
+    .peliculasmasvaloradas > ul {
             list-style: none;
             display: flex;
             margin-left: 40px;
@@ -673,13 +673,13 @@ form {
        
         }
 
-        .pelicula-card{
+    .pelicula-card{
             height: 300px;
             border-style: solid;
             border-color: darkred;
         }
             
-        .peliculaspopulares > ul{
+    .peliculaspopulares > ul{
         
                 list-style: none;
                 display: flex;
@@ -692,7 +692,105 @@ form {
                  width: 275px;
         
         }
+    .ul{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
         
+    .busqueda-banner{
+                height: 120px;
+                border-radius: 20px;
+                border-style: solid;
+                border-color: white;
+                width: 100%;
+            }
+    .resultado-busqueda{
+            font-size: medium;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+            }
+        
+        .banner--genero {
+                width: 100%;
+                height: 150px;
+                padding: 0%;
+                color: white;
+                border-style: solid;
+                border-radius: 15px;
+                margin-bottom: 70px;
+                margin-top: 40px;
+            }
+            .clase-titulosgen {
+                color: whitesmoke;
+                font-size: medium;
+                align-items: center;
+            }
+            .titulo-genero {
+                color: white;
+                font-size: large;
+            }
+            .pelicula-elegida {
+                background-color: rgb(38, 38, 39);
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 10px;
+                overflow: scroll;
+                color: white;
+                border-style: solid;
+                border-radius: 15px;
+                margin-bottom: 100px;
+                margin-top: 50px;
+                width: 94%;
+                font-size: small;
+            }
+            .favorito-texto {
+                color: whitesmoke;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: x-large;
+                text-shadow: red 0 2px;
+            }
+            .serie-elegida {
+                background-color: rgb(38, 38, 39);
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 10px;
+                overflow: scroll;
+                color: white;
+                border-style: solid;
+                border-radius: 15px;
+                margin-bottom: 100px;
+                margin-top: 50px;
+                width: 94%;
+                font-size: small;
+            }
+        
+            .banner_busqueda {
+                background-color: rgb(38, 38, 39);
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 10px;
+                
+                color: white;
+                border-style: solid;
+                border-radius: 15px;
+                margin-bottom: 100px;
+                margin-top: 50px;
+                width: 94%;
+                font-size: small;
+            }
+            .banner_busqueda > ul {
+                list-style: none;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-left: 0px;
+            }
+}
 
 
 
@@ -718,6 +816,3 @@ form {
 
 
 
-
-
-    }
