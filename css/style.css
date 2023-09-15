@@ -1,3 +1,5 @@
+/* index y header/footer para todas las paginas ----------------------------------------------------------- */
+
 .logo-sec{
     display: flex;
     justify-content: left;
@@ -135,10 +137,6 @@ header {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-@media (max-width:420px){
-  
-  
-}
 
 .telon-banner {
     height:250px;
@@ -173,9 +171,11 @@ header {
 .headerinfo{
     color: white;
     text-decoration: none;
+    padding-left: 5px;
+    margin-left: 90px;
 
 }
-/* detalle generos */
+/* detalle generos ----------------------------------------------------------- */
 
 .gcontainer {
     width: 70vw;
@@ -221,10 +221,8 @@ header {
         margin-bottom: 100px;
     }
 
-
-
   
-    /* favoriitos */
+    /* favoriitos ----------------------------------------------------------- */
 
 .mcontainer{
     width: 70vw;
@@ -283,7 +281,7 @@ header {
     
 }
 
-/* detalle serie */
+/* detalle serie ----------------------------------------------------------- */
 
 .serie-elegida{
     background-color:rgb(38, 38, 39);
@@ -322,7 +320,7 @@ header {
     color: white;
 }
 
-/* detalle pelicula */
+/* detalle pelicula ----------------------------------------------------------- */
 
 .pelicula-elegida{
     background-color:rgb(38, 38, 39);
@@ -356,7 +354,7 @@ header {
 
 }
 
-/* Estilos para el contenedor padre */
+/* Estilos para el contenedor padre ----------------------------------------------------------- */
 
 .generos-peliculas {
     background-color:rgb(38, 38, 39);
@@ -501,7 +499,8 @@ form {
      border-top-left-radius: 12px; 
      border-bottom-left-radius: 12px;
   }
-  /* busqueda html */
+
+  /* busqueda html ----------------------------------------------------------- */
 .banner_busqueda{
     background-color:rgb(38, 38, 39);
     display: flex;
@@ -532,9 +531,13 @@ form {
 }
 .busqueda-banner{
 
+    color: white;
+    border-style: solid;
     height:250px;
     border-radius: 20px;
     width:100%
+  
+   
 }
 .pelicula-card {
     height: 25rem;
@@ -561,7 +564,62 @@ form {
    
     
 }
-/* para iphone  */
+/* para centrar las peliculas en computadora -----------------------------------------------------------*/
+.seriespopulares ul li h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.seriespopulares ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.peliculaspopulares ul li h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.peliculaspopulares ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.peliculasmasvaloradas ul li h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.peliculasmasvaloradas ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.banner_favoritos ul li h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.banner_favoritos ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.banner_busqueda ul li h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+.banner_busqueda ul li p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+
+
+
+/* para iphone -----------------------------------------------------------*/
 
 @media (max-width:420px){
   
@@ -645,6 +703,7 @@ form {
             color: white;
             border-style: solid;
             border-radius: 15px;
+            margin-bottom: 20px;
         }
 
     .priurl, .segurl {
@@ -776,7 +835,7 @@ form {
                 border-style: solid;
                 border-radius: 15px;
                 margin-bottom: 100px;
-                margin-top: 50px;
+                margin-top: 0px;
                 width: 94%;
                 font-size: small;
             }
@@ -790,13 +849,98 @@ form {
                 align-items: center;
                 padding-left: 0px;
             }
+            /* para poner el estreno y nombre centrado */
+            .seriespopulares ul li h3 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .seriespopulares ul li p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .peliculaspopulares ul li h3 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .peliculaspopulares ul li p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .peliculasmasvaloradas ul li h3 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .peliculasmasvaloradas ul li p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .banner_favoritos ul li h3 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .banner_favoritos ul li p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .banner_busqueda ul li h3 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            .banner_busqueda ul li p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+            /* para el d gneros ponerlo centrado */
+
+            .generos-peliculas {
+                background-color: rgb(38, 38, 39);
+                border-style: solid;
+                border-color: white;
+                border-radius: 25px;
+                list-style: none;
+                display: block;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 0px;
+                padding-right: 30px;
+                padding-bottom: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 15px;
+            
+            }
+            .generos-series {
+                background-color: rgb(38, 38, 39);
+                border-style: solid;
+                border-color: white;
+                border-radius: 25px;
+                list-style: none;
+                display: block;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 0px;
+                padding-right: 30px;
+                padding-bottom: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+                font-size: 15px;
+            
+            }
+
+
+
+
 }
-
-
-
-
-
-
 
 
 
