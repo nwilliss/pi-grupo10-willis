@@ -24,7 +24,7 @@ fetch(url1)
     let pelicula = data.results; //todas las peliculas
     console.log(pelicula)
     let contenido = "";
-    for (let i = 0; i < data.results.length; i++) {
+    for (let i = 0; i < 10; i++) {
         console.log (pelicula[i]);
         contenido +=  `<li>
                          <a href="./detalle_peliculas.html?${pelicula[i].id}">
@@ -60,7 +60,7 @@ fetch(url2)
     let contenido = "";
     
 
-    for (let i = 0; i < data.results.length; i++) {
+    for (let i = 0; i < 10; i++) {
         console.log (pelicula[i]);
         contenido +=  `<li>
                          <a href="./detalle_peliculas.html?${pelicula[i].id}">
@@ -96,7 +96,7 @@ fetch(urlserie)
     let contenido = "";
     
 
-    for (let i = 0; i < data.results.length; i++) {
+    for (let i = 0; i < 10; i++) {
         console.log (pelicula[i]);
         contenido +=  `<li> 
                          <a href="./detalle_series.html?${pelicula[i].id}">
