@@ -43,3 +43,74 @@ fetch(url1)
     console.log(error);
 });
 
+
+//segundo fetch 
+
+fetch(url2)
+.then(function(response){
+    return response.json();
+}
+
+)
+.then(function(data){
+    
+    
+    let pelicula = data.results; //todas las peliculas
+    console.log(pelicula)
+    let contenido = "";
+    
+
+    for (let i = 0; i < data.results.length; i++) {
+        console.log (pelicula[i]);
+        contenido +=  `<li>
+                         <a href="./detalle_peliculas.html?${pelicula[i].id}">
+                         <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
+                         </a>
+                        <h3>${pelicula[i].title}</h3>
+                        <p>${pelicula[i].release_date} </p>
+                     </li>`
+
+    }
+    peliPopular.innerHTML = contenido;
+}
+
+)
+.catch(function(error){
+    console.log(error);
+});
+
+
+
+//tercer fetch
+fetch(urlserie)
+.then(function(response){
+    return response.json();
+}
+
+)
+.then(function(data){
+    
+    
+    let pelicula = data.results; //todas las peliculas
+    console.log(pelicula)
+    let contenido = "";
+    
+
+    for (let i = 0; i < data.results.length; i++) {
+        console.log (pelicula[i]);
+        contenido +=  `<li>
+                         <a href="./detalle_series.html?${pelicula[i].id}">
+                         <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
+                         </a>
+                        <h3>${pelicula[i].name}</h3>
+                        <p>${pelicula[i].first_air_date} </p>
+                     </li>`
+
+    }
+    seriePopular.innerHTML = contenido;
+}
+
+)
+.catch(function(error){
+    console.log(error);
+});
