@@ -98,7 +98,7 @@ fetch(urlserie)
 
     for (let i = 0; i < data.results.length; i++) {
         console.log (pelicula[i]);
-        contenido +=  `<li>
+        contenido +=  `<li> 
                          <a href="./detalle_series.html?${pelicula[i].id}">
                          <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
                          </a>
