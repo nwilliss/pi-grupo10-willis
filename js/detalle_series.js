@@ -27,4 +27,35 @@ fetch(DetalleSeries)
 
         let titulo = document.querySelector('#Titulo2');
         titulo.innerHTML = data.title || data.name
+        let sinopsis = document.querySelector('#sinopsis2');
+        sinopsis.innerHTML = "Sinopsis  :<br>" + data.overview
+
+        fechaestreno = document.querySelector('#fechaestrenoid2');
+        fechaestreno.innerHTML = 'Fecha de estreno:' + ' ' +( data.release_date || data.first_air_date)
         
+
+        valoracion = document.querySelector('#valoracion2');
+        valoracion.innerHTML = 'Puntaje: ' + data.vote_average + ' /10'
+
+        for (let index = 0; index < data.genres.length; index++) {
+
+
+
+            genero = document.querySelector('#generoid2');
+            genero.innerHTML += "" + data.genres[index].name
+
+        }
+
+
+    })
+
+
+
+
+    .catch(function (error) {
+
+        console.log(error);
+
+
+    })
+    
