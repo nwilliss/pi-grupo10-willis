@@ -29,13 +29,13 @@ let apiKey = "5cbe5fc6bbcd1b46780e719884ca45e5"
 let urlm = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${busqueda}`
 let urls = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${busqueda}`
 
-console.log(urlm);
+
 fetch(urlm)
     .then(function (response) {
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
+      
         let tituloBusqueda = document.querySelector(".resultado-busqueda")
 
 
@@ -49,13 +49,19 @@ fetch(urlm)
         let contenido1 = ""
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
-            contenido1 += `  <li>
-            <a href="./detalle_peliculas.html??id=${element.id}">
-                <img class="pelicula-card" src="./img/oppenheimerpelicula.webp?${element.poster_path}" alt="">
-            </a>
-            <h3> ${element.name}</h3>
-            <p> ${element.release_date}</p>
-        </li>`  
+            console.log(element)
+            srul.innerHTML += `
+            <a  class="container-serie" href="./detalle_peliculas.html?id=${element.id}">    
+            
+                <img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/>
+                <div>
+                <h3>${element.original_title}</h3>
+                <p>Fecha de estreno: ${element.release_date}</p>
+                <p>Rating: ${element.vote_average}</p>
+                <p>Popularidad: ${element.popularity}</p>
+                <p>Sinopsis: ${element.overview}</p>      
+                </div>
+                </a>`  
         }
         
     })   
@@ -68,7 +74,7 @@ fetch(urls)
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
+       
         let tituloBusqueda = document.querySelector(".resultado-busqueda")
         if (data.results.length == 0) {
             tituloBusqueda.innerText = `No se ha encontrado resultado de busqueda para: ${busqueda}`
@@ -79,11 +85,18 @@ fetch(urls)
         let srul = document.querySelector(".listaadoResults")
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
-            srul.innerHTML += `<li>
-                <a href="detalle-series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/></a>
-                <p>${element.name}</p>
-                <p>${element.first_air_date}</p>      
-           <li>`  
+            srul.innerHTML += `
+            <a  class="container-serie" href="./detalle_series.html?id=${element.id}">    
+            
+                <img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/>
+                <div>
+                <h3>${element.name}</h3>
+                <p>Fecha de estreno: ${element.first_air_date}</p>
+                <p>Rating: ${element.vote_average}</p>
+                <p>Popularidad: ${element.popularity}</p>
+                <p>Sinopsis: ${element.overview}</p>      
+                </div>
+                </a>`
         }
     })
 

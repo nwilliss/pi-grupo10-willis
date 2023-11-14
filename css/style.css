@@ -64,7 +64,7 @@ header {
 }
 .pelicula-card {
     height: 25rem;
-    margin: 1rem;
+    margin: 10px;
     border: 4px solid transparent;
     border-radius:10px;
 }
@@ -619,11 +619,34 @@ form {
 }
 
 
+.container-serie{
+
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+}
+
+.container-serie h3{
+    margin: 0;
+}
+
+.container-serie p{
+    margin: 0;
+}
+
+.container-serie img{
+    max-height: 400px;
+    margin-right: 16px;
+}
 
 
 /* para iphone -----------------------------------------------------------*/
 
 @media (max-width:420px){
+    
   
     #logoPI {
         width: 150px;
