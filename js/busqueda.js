@@ -80,7 +80,7 @@ fetch(urls)
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
             srul.innerHTML += `<li>
-                <a href="detail-series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/></a>
+                <a href="detalle-series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/></a>
                 <p>${element.name}</p>
                 <p>${element.first_air_date}</p>      
            <li>`  
