@@ -40,3 +40,53 @@ for (let index = 0; index < series.length; index++) {
         console.log(error);
     })
 }
+// Loop para peliculas
+for (let index = 0; index < peliculas.length; index++) {
+    const element = peliculas[index];
+    let DetallePelicula = `https://api.themoviedb.org/3/movie/${element}?api_key=${acaVaLaAPIKey}`
+    fetch(DetallePelicula).then(function (res) {
+        return res.json();
+    }).then(function (data) {
+        console.log(data)
+        contenedor.innerHTML += `
+        <div>
+            <a  class="container-serie" href="./detalle_peliculas.html?id=${data.id}">    
+            
+                <img src="https://image.tmdb.org/t/p/w500${data.poster_path}"/>
+                <div>
+                <h3>${data.original_title}</h3>
+                <p>Fecha de estreno: ${data.release_date}</p>
+                <p>Rating: ${data.vote_average}</p>
+                <p>Popularidad: ${data.popularity}</p>
+                <p>Sinopsis: ${data.overview}</p>      
+                </div>
+                
+                </a>
+                <button class="eliminar" data-id="${data.id}" >Eliminar</button>
+                </div>`
+
+    }).catch(function (error) {
+        console.log(error);
+    })
+}
+
+
+document.querySelector('.peliculas-por-genero').addEventListener('click', function(event) {
+    // Comprueba si el elemento clickeado es un botón con la clase 'eliminar'.
+    if (event.target.className === 'eliminar') {
+        var idElemento = event.target.getAttribute('data-id');
+        eliminarElemento(idElemento);
+    }
+});
+
+function eliminarElemento(idElemento) {
+    let almacenado = JSON.parse(localStorage.getItem('misFavoritos'));
+    // Filtra el elemento a eliminar comparando su id.
+    for (let index = 0; index < almacenado.length; index++) {
+        const element = almacenado[index];
+        if(element.id == idElemento){
+            almacenado.splice(index, 1);
+        }
+    }
+    localStorage.setItem('misFavoritos', JSON.stringify(almacenado));
+}
