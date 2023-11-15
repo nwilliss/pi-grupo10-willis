@@ -17,9 +17,9 @@ fetch(endpointPeliculas)
     })
     .then(function (data) {
         let contenedor = document.querySelector('.peliculas-por-genero')
-        const peliculas = data.results;
+        let peliculas = data.results;
         for (let index = 0; index < peliculas.length; index++) {
-            const element = peliculas[index];
+            let element = peliculas[index];
             contenedor.innerHTML += `<a class="container-serie" href="./detalle_peliculas.html?id=${element.id}">    
             
                 <img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/>
@@ -43,10 +43,10 @@ fetch(endpointPeliculas)
     })
     .then(function (data) {
         let contenedor = document.querySelector('.peliculas-por-genero')
-        const peliculas = data.results;
+        let peliculas = data.results;
 
         for (let index = 0; index < peliculas.length; index++) {
-            const element = peliculas[index];
+            let element = peliculas[index];
             console.log(element)
             contenedor.innerHTML += `<a class="container-serie" href="./detalle_series.html?id=${element.id}">    
             

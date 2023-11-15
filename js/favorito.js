@@ -4,7 +4,7 @@ let peliculas = [];
 let series = [];
 console.log(almacenado)
 for (let index = 0; index < almacenado.length; index++) {
-    const element = almacenado[index];
+    let element = almacenado[index];
     if(element.tipo == 'pelicula'){
         peliculas.push(element.id)
     }else{
@@ -15,7 +15,7 @@ for (let index = 0; index < almacenado.length; index++) {
 let contenedor = document.querySelector('.peliculas-por-genero')
 // Loop para series
 for (let index = 0; index < series.length; index++) {
-    const element = series[index];
+    let element = series[index];
     let DetalleSeries = `https://api.themoviedb.org/3/tv/${element}?api_key=${acaVaLaAPIKey}`
     fetch(DetalleSeries).then(function (res) {
         return res.json();
@@ -42,7 +42,7 @@ for (let index = 0; index < series.length; index++) {
 }
 // Loop para peliculas
 for (let index = 0; index < peliculas.length; index++) {
-    const element = peliculas[index];
+    let  element = peliculas[index];
     let DetallePelicula = `https://api.themoviedb.org/3/movie/${element}?api_key=${acaVaLaAPIKey}`
     fetch(DetallePelicula).then(function (res) {
         return res.json();
@@ -83,7 +83,7 @@ function eliminarElemento(idElemento) {
     let almacenado = JSON.parse(localStorage.getItem('misFavoritos'));
     // Filtra el elemento a eliminar comparando su id.
     for (let index = 0; index < almacenado.length; index++) {
-        const element = almacenado[index];
+        let element = almacenado[index];
         if(element.id == idElemento){
             almacenado.splice(index, 1);
         }

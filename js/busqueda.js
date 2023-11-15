@@ -48,7 +48,7 @@ fetch(urlm)
         let srul = document.querySelector(".listaadoResults")
         let contenido1 = ""
         for (let i = 0; i < data.results.length; i++) {
-            const element = data.results[i];
+            let element = data.results[i];
             
             srul.innerHTML += `
             <a  class="container-serie" href="./detalle_peliculas.html?id=${element.id}">    
@@ -84,7 +84,7 @@ fetch(urls)
         }
         let srul = document.querySelector(".listaadoResults")
         for (let i = 0; i < data.results.length; i++) {
-            const element = data.results[i];
+            let element = data.results[i];
             srul.innerHTML += `
             <a  class="container-serie" href="./detalle_series.html?id=${element.id}">    
             
