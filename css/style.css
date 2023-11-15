@@ -71,7 +71,8 @@ header {
 
 
 .peliculaspopulares {
-    background-color: rgb(38, 38, 39);
+    background-color:rgb(38, 38, 39);
+    border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;
     padding: 10px;
@@ -655,7 +656,7 @@ form {
 
 
 .peliculas-por-genero{
-    background-color: gray;
+    background-color: rgb(71, 71, 71);
     border: 2px solid white;
     border-radius: 10px;
 }
@@ -670,15 +671,18 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color:rgb(71, 71, 72);;
     margin: 10px;
     width: 70%;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .peliculas-similares{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 .container-similares{
