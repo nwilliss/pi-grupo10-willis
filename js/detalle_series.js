@@ -42,7 +42,8 @@ fetch(DetalleSeries)
 
 
             genero = document.querySelector('#generoid2');
-            genero.innerHTML += "" + data.genres[index].name
+            genero.innerHTML += `<a class="link-genero" href="./detallegenero.html?id_genero=${data.genres[index].id}&nombre=${data.genres[index].name}">${data.genres[index].name}</a>`
+            
 
         }
 
@@ -58,4 +59,3 @@ fetch(DetalleSeries)
 
 
     })
-    
