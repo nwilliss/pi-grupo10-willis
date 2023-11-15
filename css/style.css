@@ -639,6 +639,7 @@ form {
 
 .container-serie img{
     max-height: 400px;
+    max-width: 260px;
     margin-right: 16px;
 }
 
