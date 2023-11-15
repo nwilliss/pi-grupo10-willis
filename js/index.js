@@ -23,10 +23,11 @@ fetch(url1)
     
     
     let pelicula = data.results; //todas las peliculas
-    console.log(pelicula)
+   
     let contenido = "";
     for (let i = 0; i < 10; i++) {
-        console.log (pelicula[i]);
+     
+
         contenido +=  `<li>
                          <a href="./detalle_peliculas.html?id=${pelicula[i].id}">
                          <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
@@ -57,12 +58,12 @@ fetch(url2)
     
     
     let pelicula = data.results; //todas las peliculas
-    console.log(pelicula)
+   
     let contenido = "";
     
 
     for (let i = 0; i < 10; i++) {
-        console.log (pelicula[i]);
+      
         contenido +=  `<li>
                          <a href="./detalle_peliculas.html?id=${pelicula[i].id}">
                          <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
@@ -93,12 +94,12 @@ fetch(urlserie)
     
     
     let pelicula = data.results; //todas las peliculas
-    console.log(pelicula)
+   
     let contenido = "";
     
 
     for (let i = 0; i < 10; i++) {
-        console.log (pelicula[i]);
+        
         contenido +=  `<li> 
                          <a href="./detalle_series.html?id=${pelicula[i].id}">
                          <img class="pelicula-card" src=https://image.tmdb.org/t/p/w500/${pelicula[i].poster_path} alt="">
