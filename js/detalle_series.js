@@ -8,7 +8,7 @@ let IdSerie = urlparams.get('id');
 
 let DetalleSeries = `https://api.themoviedb.org/3/tv/${IdSerie}?api_key=${acaVaLaAPIKey}`
 
-console.log(DetalleSeries)
+
 
 fetch(DetalleSeries)
 
@@ -20,7 +20,7 @@ fetch(DetalleSeries)
 
     .then(function (data) {
 
-        console.log(data);
+        
 
         let imagen = document.querySelector('#imagen2');
         imagen.src = "https://image.tmdb.org/t/p/w500/" + data.poster_path
@@ -59,3 +59,12 @@ fetch(DetalleSeries)
 
 
     })
+    document.getElementById('fav').addEventListener('click', function() {
+
+        let data = JSON.parse(localStorage.getItem('misFavoritos'));
+        if (data == null) {
+            data = [];
+        }
+        data.push({tipo: 'serie', id: IdSerie});
+        localStorage.setItem('misFavoritos', JSON.stringify(data));
+    });

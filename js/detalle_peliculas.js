@@ -8,7 +8,7 @@ let qsIdPelicula = urlparams.get('id');
 
 let DetallePelicula = `https://api.themoviedb.org/3/movie/${qsIdPelicula}?api_key=${acaVaLaAPIKey}`
 
-console.log(DetallePelicula)
+
 
 fetch(DetallePelicula)
 
@@ -20,7 +20,7 @@ fetch(DetallePelicula)
 
     .then(function (data) {
 
-        console.log(data);
+        
 
         let imagen = document.querySelector('#imagen');
         imagen.src = "https://image.tmdb.org/t/p/w500/" + data.poster_path
@@ -57,3 +57,15 @@ fetch(DetallePelicula)
 
 
     })
+
+
+
+document.getElementById('fav').addEventListener('click', function() {
+
+    let data = JSON.parse(localStorage.getItem('misFavoritos'));
+    if (data == null) {
+        data = [];
+    }
+    data.push({tipo: 'pelicula', id: qsIdPelicula});
+    localStorage.setItem('misFavoritos', JSON.stringify(data));
+});

@@ -49,7 +49,7 @@ fetch(urlm)
         let contenido1 = ""
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
-            console.log(element)
+            
             srul.innerHTML += `
             <a  class="container-serie" href="./detalle_peliculas.html?id=${element.id}">    
             
