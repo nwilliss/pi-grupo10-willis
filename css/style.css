@@ -348,7 +348,7 @@ header {
 }
 
 .detalle-oppenheimer{
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     list-style: none;
     justify-content: left;
@@ -659,6 +659,12 @@ form {
     border: 2px solid white;
     border-radius: 10px;
 }
+
+.fav{
+    height: 50px;
+
+}
+
 
 /* para iphone -----------------------------------------------------------*/
 
