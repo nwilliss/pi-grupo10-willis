@@ -60,4 +60,25 @@ fetch(endpointPeliculas)
     .then(function (res) {
         return res.json();
     })
-    
+    .then(function (data) {
+        let contenedor = document.querySelector('.peliculas-por-genero')
+        const peliculas = data.results;
+        for (let index = 0; index < peliculas.length; index++) {
+            const element = peliculas[index];
+            contenedor.innerHTML += `<a class="container-serie" href="./detalle_peliculas.html?id=${element.id}">    
+            
+                <img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/>
+                <div>
+                <h3>${element.original_title}</h3>
+                <p>Fecha de estreno: ${element.release_date}</p>
+                <p>Rating: ${element.vote_average}</p>
+                <p>Popularidad: ${element.popularity}</p>
+                <p>Sinopsis: ${element.overview}</p>      
+                </div>
+                </a>`
+        }
+    }
+    ).catch(function (error) {
+        console.log(error);
+    })
+
