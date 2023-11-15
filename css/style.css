@@ -643,6 +643,22 @@ form {
 }
 
 
+.link-genero{
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.peliculas-por-genero{
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
 /* para iphone -----------------------------------------------------------*/
 
 @media (max-width:420px){
