@@ -43,3 +43,21 @@ fetch(urlGenerosseries)
 .catch(function(miError){
     console.log(miError);
 });
+let acaVaLaAPIKey = "5cbe5fc6bbcd1b46780e719884ca45e5";
+
+let urlparams = new URLSearchParams(location.search);
+
+let qsIdGenero = urlparams.get('id_genero');
+let qsNombre = urlparams.get('nombre');
+
+let titulo = document.querySelector('.genero-elegido');
+titulo.innerHTML = qsNombre
+// https://api.themoviedb.org/3/discover/movie?api_key=xxx&with_genres=28   
+let endpointPeliculas = `https://api.themoviedb.org/3/discover/movie?api_key=${acaVaLaAPIKey}&with_genres=${qsIdGenero}`
+let endpointSeries = `https://api.themoviedb.org/3/discover/tv?api_key=${acaVaLaAPIKey}&with_genres=${qsIdGenero}`
+
+fetch(endpointPeliculas)
+    .then(function (res) {
+        return res.json();
+    })
+    
