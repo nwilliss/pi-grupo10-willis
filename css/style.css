@@ -665,6 +665,45 @@ form {
 
 }
 
+.similares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px;
+    width: 70%;
+}
+
+.peliculas-similares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-similares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.container-similares img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-similares h3{
+    margin: 0;
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
 
 /* para iphone -----------------------------------------------------------*/
 
