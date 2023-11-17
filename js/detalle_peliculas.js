@@ -87,3 +87,25 @@ document.getElementById('fav').addEventListener('click', function() {
     data.push({tipo: 'pelicula', id: qsIdPelicula});
     localStorage.setItem('misFavoritos', JSON.stringify(data));
 });
+
+
+document.getElementById('similares').addEventListener('click', function() {
+
+        fetch(similares).then(function (res) {
+    return res.json();
+}).then(function (data) {
+    let contenedor = document.querySelector('.similares')
+    let peliculas = data.results;
+    contenedor.innerHTML = '<h2>Series similares</h2>';
+    for (let index = 0; index < 6; index++) {
+        let element = peliculas[index];
+
+        contenedor.innerHTML += `<div>
+        <a href="./detalle_series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt=""></a>
+        <h2>${element.original_title}</h2>
+        </div>`
+    }    
+}).catch(function (error) {
+    console.log(error);
+})
+    });
