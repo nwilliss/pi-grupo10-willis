@@ -39,7 +39,7 @@ fetch(urlm)
         let tituloBusqueda = document.querySelector(".resultado-busqueda")
 
 
-        if (data.results.length == "") {
+        if (data.results.length == 0) {
             tituloBusqueda.innerText= `No se ha encontrado resultado de busqueda para: ${busqueda}` //crear una alert
         }
         else {

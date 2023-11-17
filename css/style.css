@@ -678,6 +678,17 @@ form {
     border: 2px solid white;
     border-radius: 10px;
     color: white;
+    font-size: 26px;
+    margin-top: 0px;
+}
+.titulopeli{
+    font-size: 20px;
+}
+
+.imagReco{
+    width: 320px;
+   
+    
 }
 
 .peliculas-similares{
@@ -1029,7 +1040,9 @@ form {
                 font-size: 15px;
             
             }
-
+            .imagReco{
+                width: 150px;
+            }
 
 
 

@@ -78,12 +78,12 @@ fetch(DetalleSeries)
     let contenedor = document.querySelector('.similares')
     let peliculas = data.results;
     contenedor.innerHTML = '<h2>Series similares</h2>';
-    for (let index = 0; index < 6; index++) {
+    for (let index = 0; index < 10; index++) {
         let element = peliculas[index];
 
         contenedor.innerHTML += `<div>
-        <a href="./detalle_series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt=""></a>
-        <h2>${element.name}</h2>
+        <a href="./detalle_series.html?id=${element.id}"><img  class="imagReco"src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt=""></a>
+        <h2 class="titulopeli">${element.name}</h2>
         </div>`
     }    
 }).catch(function (error) {
