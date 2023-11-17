@@ -628,6 +628,7 @@ form {
     text-decoration: none;
     color: inherit;
     margin: 10px;
+    color: white;
 }
 
 .container-serie h3{
@@ -656,7 +657,7 @@ form {
 
 
 .peliculas-por-genero{
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(60, 60, 60);
     border: 2px solid white;
     border-radius: 10px;
 }
@@ -671,11 +672,12 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(71, 71, 72);;
+    background-color:rgb(60, 60, 60);;
     margin: 10px;
     width: 70%;
     border: 2px solid white;
     border-radius: 10px;
+    color: white;
 }
 
 .peliculas-similares{
