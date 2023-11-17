@@ -11,10 +11,15 @@ for (let index = 0; index < almacenado.length; index++) {
         series.push(element.id)
     }
 }
-
 let contenedor = document.querySelector('.peliculas-por-genero')
+if (almacenado == null || almacenado.length==0 ) {
+    document.querySelector("#texto").innerHTML="No hay favoritos"
+    
+}else{
+
+
 // Loop para series
-for (let index = 0; index < series.length; index++) {
+    for (let index = 0; index < series.length; index++) {
     let element = series[index];
     let DetalleSeries = `https://api.themoviedb.org/3/tv/${element}?api_key=${acaVaLaAPIKey}`
     fetch(DetalleSeries).then(function (res) {
@@ -38,8 +43,8 @@ for (let index = 0; index < series.length; index++) {
                 `
     }).catch(function (error) {
         console.log(error);
-    })
-}
+    })}
+
 // Loop para peliculas
 for (let index = 0; index < peliculas.length; index++) {
     let  element = peliculas[index];
@@ -68,8 +73,8 @@ for (let index = 0; index < peliculas.length; index++) {
     }).catch(function (error) {
         console.log(error);
     })
-}
 
+}}  
 
 document.querySelector('.peliculas-por-genero').addEventListener('click', function(event) {
     // Comprueba si el elemento clickeado es un botón con la clase 'eliminar'.
