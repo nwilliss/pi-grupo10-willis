@@ -20,8 +20,7 @@ fetch(DetalleSeries)
 
     .then(function (data) {
 
-        console.log(data)
-
+       
         let imagen = document.querySelector('#imagen2');
         imagen.src = "https://image.tmdb.org/t/p/w500/" + data.poster_path
 
@@ -60,25 +59,8 @@ fetch(DetalleSeries)
 
     })
     let similares = `https://api.themoviedb.org/3/tv/${IdSerie}/similar?api_key=${acaVaLaAPIKey}`
-fetch(similares).then(function (res) {
-    return res.json();
-}).then(function (data) {
-    let contenedor = document.querySelector('.peliculas-similares')
-    let peliculas = data.results;
-    for (let index = 0; index < peliculas.length; index++) {
-        let element = peliculas[index];
-        contenedor.innerHTML += `<a class="container-similares" href="./detalle_peliculas.html?id=${element.id}">    
-        
-            <img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/>
-            
-            <h3>${element.name}</h3>   
-            
-            </a>`
-    }
-    console.log(data)}).catch(function (error) {
-    console.log(error);
-})
-    document.getElementById('fav').addEventListener('click', function() {
+
+    document.getElementById('fav').addEventListener('click', function()  {
 
         let data = JSON.parse(localStorage.getItem('misFavoritos'));
         if (data == null) {
@@ -87,3 +69,25 @@ fetch(similares).then(function (res) {
         data.push({tipo: 'serie', id: IdSerie});
         localStorage.setItem('misFavoritos', JSON.stringify(data));
     });
+
+    document.getElementById('similares').addEventListener('click', function() {
+
+        fetch(similares).then(function (res) {
+    return res.json();
+}).then(function (data) {
+    let contenedor = document.querySelector('.similares')
+    let peliculas = data.results;
+    contenedor.innerHTML = '<h2>Series similares</h2>';
+    for (let index = 0; index < 6; index++) {
+        let element = peliculas[index];
+
+        contenedor.innerHTML += `<div>
+        <a href="./detalle_series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt=""></a>
+        <h2>${element.name}</h2>
+        </div>`
+    }    
+}).catch(function (error) {
+    console.log(error);
+})
+    });
+    
